@@ -19,9 +19,15 @@ class BlockHandler
 
         // register blocks here
         // register_block_type()
+        $manifest_data = require GB_UP_PATH . 'blocks/build/blocks-manifest.php';
 
-        register_block_type(GB_UP_PATH . 'blocks/build/heading');
-        register_block_type(GB_UP_PATH . 'blocks/build/card');
+        foreach (array_keys($manifest_data) as $block_type) {
+
+            register_block_type(GB_UP_PATH . "blocks/build/" . $block_type);
+        }
+
+        // register_block_type(GB_UP_PATH . 'blocks/build/heading  ');
+        // register_block_type(GB_UP_PATH . 'blocks/build/card');
     }
 
 }
