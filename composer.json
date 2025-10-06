@@ -1,0 +1,22 @@
+{
+  "name": "hasan/gb-up",
+  "description": "Gutenberg up",
+  "autoload": {
+    "psr-4": {
+      "Hasan\\GbUp\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Hasan"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">= 8.0"
+  },
+  "require-dev": {
+    "php-stubs/wordpress-stubs": "^6.8",
+    "arifpavel/elementor-stubs": "3.1.4.1"
+  }
+}
